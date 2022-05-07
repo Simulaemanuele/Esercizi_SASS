@@ -1,0 +1,54 @@
+body {
+  height: 100vh;
+  font-size: 1rem;
+}
+body div.box {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+}
+body div.box h1 {
+  color: green;
+  border-bottom: 3px solid blue;
+}
+body div.box section.main-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 145px;
+  overflow: hidden;
+}
+body div.box section.main-container article.main-content {
+  border: 1px solid;
+  color: red;
+  border-color: green;
+  font-size: inherit;
+}
+body div.box section.main-container article.main-content p {
+  text-align: center;
+  padding-top: 25px;
+}
+body div.box section.main-container article.main-content:nth-child(1) {
+  color: blue;
+}
+body div.box section.main-container article.main-content:nth-child(2) {
+  color: red;
+}
+body div.box section.main-container article.main-content:nth-child(3) {
+  color: blue;
+}
+body div.box section.main-container article.main-content:nth-child(4) {
+  color: red;
+}
+body div.box section.footer-container article.footer-article {
+  border: 1px solid;
+  color: green;
+  border-color: blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
