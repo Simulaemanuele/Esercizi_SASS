@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+}
+body div {
+  border: 1px solid red;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body div h1 {
+  color: green;
+  text-decoration: underline blue;
+}
+body div section {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body div section article {
+  border: 1px solid green;
+  height: 145px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+body div section article p {
+  text-align: center;
+  padding-top: 25px;
+}
+body div section article:nth-child(1) {
+  color: blue;
+}
+body div section article:nth-child(2) {
+  color: red;
+}
+body div section article:nth-child(3) {
+  color: blue;
+}
+body div section article:last-child {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
