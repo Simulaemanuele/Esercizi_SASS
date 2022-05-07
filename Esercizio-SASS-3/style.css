@@ -1,0 +1,54 @@
+body {
+  height: 100vh;
+  font-size: 1rem;
+}
+body div.box {
+  border: 0.125rem solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+}
+body div.box h1 {
+  color: green;
+  border-bottom: 0.1875rem solid blue;
+}
+body div.box section.main-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  height: 9.0625rem;
+  overflow: hidden;
+}
+body div.box section.main-container article.main-content {
+  border: 0.0625rem solid;
+  color: red;
+  border-color: green;
+  font-size: inherit;
+}
+body div.box section.main-container article.main-content p {
+  text-align: center;
+  padding-top: 1.5625rem;
+}
+body div.box section.main-container article.main-content:nth-child(1) {
+  color: blue;
+}
+body div.box section.main-container article.main-content:nth-child(2) {
+  color: red;
+}
+body div.box section.main-container article.main-content:nth-child(3) {
+  color: blue;
+}
+body div.box section.main-container article.main-content:nth-child(4) {
+  color: red;
+}
+body div.box section.footer-container article.footer-article {
+  border: 0.0625rem solid;
+  color: green;
+  border-color: blue;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

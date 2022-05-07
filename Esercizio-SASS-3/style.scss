@@ -1,0 +1,77 @@
+@use 'base';
+@use 'functions' as f;
+
+@mixin article-card ($color, $border-color, $size) {
+    color: $color;
+    border-color: $border-color;
+    font-size: $size;
+}
+
+body {
+
+    height: 100vh;
+    font-size: 1rem;
+
+    
+    
+    div.box {
+        border: f.toRem(2) solid base.$color-primary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50%;
+
+        h1 {
+            color: base.$color-tertiary;
+
+            border-bottom: f.toRem(3) solid base.$color-secondary;
+            
+        }
+    
+
+        section.main-container {
+            display: flex;
+            flex-direction: row;
+            margin-left: f.toRem(15);
+            margin-right: f.toRem(15);
+            height: f.toRem(145);
+            overflow: hidden;
+
+            article.main-content {
+                border: f.toRem(1) solid;
+                @include article-card(base.$color-primary, base.$color-tertiary, inherit);
+
+                p {
+                    text-align: center;
+                    padding-top: f.toRem(25);
+                }
+
+            }
+
+            article.main-content:nth-child(1) {
+                color: base.$color-secondary;
+            }
+
+            article.main-content:nth-child(2) {
+                color: base.$color-primary;
+            }
+
+            article.main-content:nth-child(3) {
+                color: base.$color-secondary;
+            }
+
+            article.main-content:nth-child(4) {
+                color: base.$color-primary;
+            }
+        }
+
+        section.footer-container {
+
+            article.footer-article {
+                border: f.toRem(1) solid;
+                @include article-card(base.$color-tertiary, base.$color-secondary, f.toRem(24));
+            }
+        }
+    }
+}
